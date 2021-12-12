@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 style="text-align: center;">পিকনিক ফর্ম</h1>
+    <br>
+    <p style="text-align: center;">শহীদ রমিজ উদ্দিন ক্যান্টনমেন্ট কলেজ</p>
+    <title>পিকনিক ফর্ম - ৯৮</title>
+</head>
+    <br>
+    <br>
+    <marquee direction="left" style="color: green;">নিজে ফর্মটি পূরণ করুন। অন্যকে ফরমটি পূরণ করতে উৎসাহিত করুন।</marquee>
+<body>
+    <section>
+        <div class="container">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="Name:">Name:</label>
+                    <input type="text" id="Name:" name="Name:">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Batch no:">Batch no:</label>
+                    <input type="text" id="Batch no:" name="Batch no:">
+                </div>
+                <br>
+                Mobile No: <input type="text" name="number"placeholder="+8801XXXXXXXXX">
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="Blood group">Blood group</label>
+                    <input type="text" id="Blood group" name="Blood group">
+                </div>
+                <br>
+                <label >
+                    Are you interested in going on a picnic?:<br> Yes &nbsp;<input type="radio" name="Are you interested in going on a picnic?:" >    &nbsp; No &nbsp;<input type="radio" name="Are you interested in going on a picnic?:">
+                </label>
+                <br>
+                <br>
+                <label >
+                    Are you interested in taking family members on a picnic?:<br> Yes &nbsp;<input type="radio" name="Are you interested in taking family members on a picnic?:" >    &nbsp; No &nbsp;<input type="radio" name="Are you interested in taking family members on a picnic?:">
+                </label>
+                <br>
+                <br>
+                <label >
+                    Give your opinion on determining the amount of picnic subscription:<br> 1000/= &nbsp;<input type="radio" name="Give your opinion on determining the amount of picnic subscription:" >    &nbsp; 1500/= &nbsp;<input type="radio" name="Give your opinion on determining the amount of picnic subscription:">    &nbsp; 2000+/=  &nbsp;<input type="radio" name="Give your opinion on determining the amount of picnic subscription:">
+                </label>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="Give your opinion on determining the venue of the picnic:">Give your opinion on determining the venue of the picnic:</label>
+                    <textarea name="Give your opinion on determining the venue of the picnic:" id="Give your opinion on determining the venue of the picnic:" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <br>
+                Give your opinion on setting a convenient date for the picnic: <input type="date" name="date of birth">
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="How many members of your family can take part in the picnic?">How many members of your family can take part in the picnic?</label>
+                    <input type="text" id="How many members of your family can take part in the picnic?" name="How many members of your family can take part in the picnic?">
+                </div>
+                <br>
+                <br>
+                <label>
+                    Give your opinion on keeping the juniors involved in the picnic:<br> Yes &nbsp;<input type="radio" name="Give your opinion on keeping the juniors involved in the picnic:" >    &nbsp; No &nbsp;<input type="radio" name="Give your opinion on keeping the juniors involved in the picnic:">
+                </label>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="Email:">Email:</label>
+                    <input type="text" id="Email:" name="Email:">
+                </div>
+                <br>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <div id="status" class="error">Success</div>
+    </section>
+</body>
+</html>
+
+<html>
+    <body>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'Montserrat';
+            }
+            section{
+                height: 220vh;
+                width: 100%;
+                background-color: aliceblue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .container{
+                width: 90%;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 60px;
+                box-shadow: 0px 0px 0px #00000010;
+                background-color: white;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+            .form.group{
+                width: 100%;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            .form-group input,
+            .form-group textarea{
+                width: 100%;
+                padding: 5px;
+                font-size: 18px;
+                border: 1px solid rgba(128, 128, 128, 0.199);
+                margin-top: 5px;
+            }
+            
+            textarea{
+                resize: vertical;
+            }
+            button[type="submit"]{
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 20px;
+                font-size: 24px;
+                border-radius: 8px;
+                font-family: 'Montserrat';
+                color: rgb(27, 166, 247);
+                text-align: center;
+                cursor: pointer;
+                margin-top: 10px;
+                transition: 3s ease background-color;
+            }
+            button[type="submit"]:hover{
+                background-color: rgb(214, 226, 236);
+            }
+            #status{
+                width: 90%;
+                max-width: 500px;
+                text-align: center;
+                padding: 10px;
+                margin: 0 auto;
+                border-radius: 8px;
+            }
+            #status.success{
+                background-color: rgb(211, 250, 153) ;
+                animation: status 4s ease forwards;
+            }
+            #status.error{
+                background-color: rgb(250, 129, 92);
+                color: white;
+                animation: status 4s ease forwards;
+            }
+            @keyframes status{
+                0%{
+                    opacity: 1;
+                    pointer-events: all;
+            }
+            90%{
+                opacity: 1;
+                pointer-events: all;
+            }
+            100%{
+                opacity: 0;
+                pointer-events: none;
+                }
+            }
+        </style>
+    </body>
+</html>
